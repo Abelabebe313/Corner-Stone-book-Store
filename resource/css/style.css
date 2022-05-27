@@ -1,0 +1,203 @@
+@import url('https://fonts.googleapis.com/css?family=Quicksand:400,500,700');
+html,
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Quicksand", sans-serif;
+    font-size: 62.5%;
+    font-size: 10px;
+}
+/*-- Inspiration taken from abdo steif -->
+/* --> https://codepen.io/abdosteif/pen/bRoyMb?editors=1100*/
+
+/* Navbar section */
+
+.nav {
+    width: 100%;
+    height: 65px;
+    position: fixed;
+    line-height: 65px;
+    text-align: center;
+}
+.container{
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+}
+.nav div.logo {
+    float: left;
+    width: auto;
+    height: auto;
+    padding-left: 3rem;
+}
+
+.nav div.logo a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 2.5rem;
+}
+
+.nav div.logo a:hover {
+    color: #00E676;
+}
+
+.nav div.main_list {
+    height: 65px;
+    float: ;
+}
+
+.nav div.main_list ul {
+    width: 100%;
+    height: 65px;
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.nav div.main_list ul li {
+    width: auto;
+    height: 65px;
+    padding: 0;
+    padding-right: 3rem;
+}
+
+.nav div.main_list ul li a {
+    text-decoration: none;
+    color: #fff;
+    line-height: 65px;
+    font-size: 1.8rem;
+}
+
+.nav div.main_list ul li a:hover {
+    color: #00E676;
+}
+ /* Drop Down Button */
+ .dropdown{
+     position: relative;
+     display: inline-block;
+ }
+.dropdown-content{
+    display: none;
+    width: 200px;
+    position: absolute;
+    background-color: rgba(169, 169, 169, 0.707);
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    margin-top: -25px;
+    padding: -10px;
+    
+}
+.dropdown-content a{
+    display: block;
+    margin: 0;
+    padding: 0;
+}
+.dropdown:hover .dropdown-content{
+    display: block;
+}
+.dropdown-content a:hover{
+    background-color: #f1f1f1;   
+} 
+
+
+
+/* Option button */
+.navOption{
+    background-color: transparent;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+.navOption .line{
+    display: block;
+    width: 40px;
+    height: 3px;
+    background-color: #fff;
+    margin-block: 10px;
+    border-radius: 4px;
+    transition: transform .5s,opacity .25s;
+}
+.navOption.active .line:nth-child(1){
+    transform: translateY(13px)rotate(45deg);
+}
+.navOption.active .line:nth-child(2){
+    opacity: 0;
+}
+.navOption.active .line:nth-child(3){
+    transform: translateY(-13px)rotate(-45deg);
+}
+
+
+
+/* Home */
+.home {
+    width: 100%;
+    height: 100vh;
+    background-color: darkgrey;
+    background-position: center top;
+	background-size:cover;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.home .corner{
+    font-family: montserrat;
+    font-size: 80px;
+    font-weight: 1000;
+    color: #000;
+    margin: 0;
+}
+.home .slogan{
+    font-size: 50px;
+    margin: 0;
+    color: #fff;
+}
+.left{
+    width: 45%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    Margin-left: 30px;
+} 
+.btn{
+    position: relative;
+    top: 50%;
+    transform: translateY(-0%);
+    /* margin: 0 auto; */
+    width: 320px;
+}
+.shape{
+    stroke-dasharray: 140 540;
+    stroke-dashoffset: -265;
+    stroke-width: 5px;
+    fill: transparent;
+    stroke: #00E676;
+    border-bottom: 5px solid black;
+    transition: stroke-width 1s, stroke-dashoffset 1s, stroke-dasharray 1s;
+}
+.text{
+    font-family: montserrat;
+    font-size: 22px;
+    line-height: 32px;
+    letter-spacing: 5px;
+    color: #fff;
+    top: -150px;
+    left: 25px;
+    position: relative;
+}
+.btn:hover .shape{
+    stroke-width: 2px;
+    stroke-dashoffset: 0;
+    stroke-dasharray: 760;
+}
+.right{
+    width: 55%;
+}
+.right img{
+    width: 90%;
+}
